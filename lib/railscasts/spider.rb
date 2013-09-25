@@ -4,10 +4,10 @@ module RailsCasts
     
     def scrap
       pages = get_pages
-      episodes = pages.map do |page|
-        Logger.info "Fetch page #{page} start"
+      pages.map do |page|
+        Logger.info "Fetch Page #{page} Start"
         arr = fetch_episodes_for_current page
-        Logger.info "Fetch page #{page} complete"
+        Logger.info "Fetch Page #{page} Complete"
         arr
       end.flatten
     end
@@ -35,16 +35,26 @@ module RailsCasts
         name = episode.css('.main h2 a').attr('href').text.split('/').last
         published_at = episode.css('.main .info .published_at').text
         {
-          id: id,
-          type: type,
-          name: name,
-          published_at: published_at
+          'id' => id,
+          'type'=> type,
+          'name'=> parse_name(name),
+          'published_at'=> published_at
         }
       end
     end
     
     def html_parser(uri)
       Nokogiri::HTML(open(uri))
+    end
+    
+    def parse_name(name)
+      parts = name.split('-')
+      snumber = parts.shift
+      if snumber.length < 3
+        snumber = '0'*(3 - snumber.length) + snumber
+      end
+      parts.unshift snumber
+      parts.join('-')
     end
   end
 end

@@ -1,20 +1,21 @@
 module RailsCasts
   class Subscriber
-    attr_reader :subscription_code
-    attr_reader :log_info
-    
-    BASE_DOWNLOAD_URI = 'http://media.railscasts.com/assets/'
     
     def update
-      
+      check_for_new_episodes
     end
     
     def update_all
-      
+      update
     end
     
     def check_for_new_episodes
-      
+      episodes = RailsCasts::Spider.new.scrap
+      file = File.open('./../../tmp/episodes.yml', 'w')
+      file.write(episodes.to_yaml)
+      file.close
+      Logger.info "RailsCasts Updated"
     end
+    
   end
 end

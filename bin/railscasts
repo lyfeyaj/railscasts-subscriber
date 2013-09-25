@@ -3,3 +3,6 @@
 begin
   require 'railscasts'
 end
+
+RailsCasts::Subscriber.new.update
+RailsCasts::Downloader.new.download

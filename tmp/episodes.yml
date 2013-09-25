@@ -1,11 +1,1901 @@
-episodes:
-  1:
-    id: 1
-    type: normal
-    name: 1-caching-with-instance-variables
-    published_at: "Aug 13, 2007"
-  2:
-    id: 305
-    type: pro
-    name: 305-authentication-with-warden
-    published_at: "Aug 13, 2010"
+---
+- id: 476
+  type: Normal
+  name: 417-foundation
+  published_at: Jun 16, 2013
+- id: 475
+  type: Pro
+  name: 416-form-objects
+  published_at: Jun 03, 2013
+- id: 474
+  type: Pro
+  name: 115-model-caching-revised
+  published_at: May 13, 2013
+- id: 473
+  type: Normal
+  name: 415-upgrading-to-rails-4
+  published_at: May 06, 2013
+- id: 472
+  type: Pro
+  name: 414-batch-api-requests
+  published_at: Apr 27, 2013
+- id: 471
+  type: Pro
+  name: 053-handling-exceptions-revised
+  published_at: Apr 20, 2013
+- id: 470
+  type: Pro
+  name: 413-fast-tests
+  published_at: Apr 10, 2013
+- id: 469
+  type: Normal
+  name: 412-fast-rails-commands
+  published_at: Apr 04, 2013
+- id: 468
+  type: Pro
+  name: 411-performance-testing
+  published_at: Mar 27, 2013
+- id: 467
+  type: Pro
+  name: 022-eager-loading-revised
+  published_at: Mar 20, 2013
+- id: 466
+  type: Pro
+  name: 410-ember-part-2
+  published_at: Mar 12, 2013
+- id: 465
+  type: Normal
+  name: 409-active-model-serializers
+  published_at: Mar 09, 2013
+- id: 464
+  type: Pro
+  name: 408-ember-part-1
+  published_at: Mar 04, 2013
+- id: 463
+  type: Pro
+  name: 165-edit-multiple-revised
+  published_at: Feb 25, 2013
+- id: 462
+  type: Pro
+  name: 407-activity-feed-from-scratch
+  published_at: Feb 14, 2013
+- id: 461
+  type: Normal
+  name: 406-public-activity
+  published_at: Feb 13, 2013
+- id: 460
+  type: Pro
+  name: 405-angularjs
+  published_at: Feb 05, 2013
+- id: 459
+  type: Pro
+  name: 148-custom-app-generators-revised
+  published_at: Feb 03, 2013
+- id: 458
+  type: Pro
+  name: 403-dynamic-forms
+  published_at: Jan 27, 2013
+- id: 457
+  type: Normal
+  name: 402-better-errors-railspanel
+  published_at: Jan 25, 2013
+- id: 456
+  type: Pro
+  name: 401-actioncontroller-live
+  published_at: Jan 19, 2013
+- id: 455
+  type: Pro
+  name: 229-polling-for-changes-revised
+  published_at: Jan 14, 2013
+- id: 454
+  type: Normal
+  name: 400-what-s-new-in-rails-4
+  published_at: Jan 04, 2013
+- id: 453
+  type: Pro
+  name: 399-autocomplete-search-terms
+  published_at: Dec 31, 2012
+- id: 452
+  type: Pro
+  name: 398-service-objects
+  published_at: Dec 18, 2012
+- id: 451
+  type: Pro
+  name: 063-model-name-in-url-revised
+  published_at: Dec 16, 2012
+- id: 450
+  type: Pro
+  name: 397-action-view-walkthrough
+  published_at: Dec 09, 2012
+- id: 449
+  type: Normal
+  name: 396-importing-csv-and-excel
+  published_at: Dec 08, 2012
+- id: 448
+  type: Pro
+  name: 395-action-controller-walkthrough
+  published_at: Dec 02, 2012
+- id: 447
+  type: Pro
+  name: 162-tree-based-navigation-revised
+  published_at: Dec 01, 2012
+- id: 446
+  type: Pro
+  name: 394-sti-and-polymorphic-associations
+  published_at: Nov 25, 2012
+- id: 445
+  type: Normal
+  name: 393-guest-user-record
+  published_at: Nov 21, 2012
+- id: 444
+  type: Pro
+  name: 392-a-tour-of-state-machines
+  published_at: Nov 17, 2012
+- id: 443
+  type: Pro
+  name: 103-site-wide-announcements-revised
+  published_at: Nov 12, 2012
+- id: 442
+  type: Pro
+  name: 391-testing-javascript-with-phantomjs
+  published_at: Nov 07, 2012
+- id: 441
+  type: Normal
+  name: 390-turbolinks
+  published_at: Nov 05, 2012
+- id: 440
+  type: Pro
+  name: 106-time-zones-revised
+  published_at: Oct 28, 2012
+- id: 439
+  type: Pro
+  name: 389-multitenancy-with-postgresql
+  published_at: Oct 27, 2012
+- id: 438
+  type: Pro
+  name: 388-multitenancy-with-scopes
+  published_at: Oct 20, 2012
+- id: 437
+  type: Normal
+  name: 387-cache-digests
+  published_at: Oct 20, 2012
+- id: 435
+  type: Pro
+  name: 085-yaml-configuration-revised
+  published_at: Oct 14, 2012
+- id: 434
+  type: Pro
+  name: 386-authorization-from-scratch-part-2
+  published_at: Oct 11, 2012
+- id: 433
+  type: Pro
+  name: 385-authorization-from-scratch-part-1
+  published_at: Oct 07, 2012
+- id: 432
+  type: Normal
+  name: 384-exploring-rubygems
+  published_at: Oct 07, 2012
+- id: 431
+  type: Pro
+  name: 136-jquery-ajax-revised
+  published_at: Sep 28, 2012
+- id: 430
+  type: Pro
+  name: 383-uploading-to-amazon-s3
+  published_at: Sep 26, 2012
+- id: 429
+  type: Normal
+  name: 382-tagging
+  published_at: Sep 22, 2012
+- id: 428
+  type: Pro
+  name: 381-jquery-file-upload
+  published_at: Sep 21, 2012
+- id: 427
+  type: Pro
+  name: 223-charts-graphs-revised
+  published_at: Sep 15, 2012
+- id: 426
+  type: Pro
+  name: 380-memcached-dalli
+  published_at: Sep 12, 2012
+- id: 425
+  type: Pro
+  name: 379-template-handlers
+  published_at: Sep 04, 2012
+- id: 424
+  type: Normal
+  name: 378-fnordmetric
+  published_at: Sep 04, 2012
+- id: 423
+  type: Pro
+  name: 117-semi-static-pages-revised
+  published_at: Sep 02, 2012
+- id: 422
+  type: Pro
+  name: 377-trinidad
+  published_at: Aug 30, 2012
+- id: 421
+  type: Normal
+  name: 376-jruby-basics
+  published_at: Aug 30, 2012
+- id: 420
+  type: Pro
+  name: 137-memoization-revised
+  published_at: Aug 18, 2012
+- id: 419
+  type: Pro
+  name: 375-monit
+  published_at: Aug 16, 2012
+- id: 418
+  type: Normal
+  name: 374-image-manipulation
+  published_at: Aug 16, 2012
+- id: 417
+  type: Pro
+  name: 213-calendars-revised
+  published_at: Aug 10, 2012
+- id: 416
+  type: Pro
+  name: 373-zero-downtime-deployment
+  published_at: Aug 09, 2012
+- id: 415
+  type: Normal
+  name: 372-bullet
+  published_at: Aug 09, 2012
+- id: 414
+  type: Pro
+  name: 059-optimistic-locking-revised
+  published_at: Aug 04, 2012
+- id: 413
+  type: Pro
+  name: 371-strong-parameters
+  published_at: Aug 03, 2012
+- id: 412
+  type: Normal
+  name: 370-ransack
+  published_at: Aug 03, 2012
+- id: 411
+  type: Pro
+  name: 238-mongoid-revised
+  published_at: Jul 28, 2012
+- id: 410
+  type: Pro
+  name: 369-client-side-performance
+  published_at: Jul 24, 2012
+- id: 409
+  type: Normal
+  name: 368-miniprofiler
+  published_at: Jul 24, 2012
+- id: 408
+  type: Pro
+  name: 016-virtual-attributes-revised
+  published_at: Jul 20, 2012
+- id: 407
+  type: Pro
+  name: 367-celluloid
+  published_at: Jul 18, 2012
+- id: 406
+  type: Normal
+  name: 366-sidekiq
+  published_at: Jul 18, 2012
+- id: 405
+  type: Pro
+  name: 235-devise-and-omniauth-revised
+  published_at: Jul 13, 2012
+- id: 404
+  type: Pro
+  name: 365-thread-safety
+  published_at: Jul 09, 2012
+- id: 403
+  type: Normal
+  name: 364-active-record-reputation-system
+  published_at: Jul 09, 2012
+- id: 402
+  type: Pro
+  name: 209-devise-revised
+  published_at: Jul 06, 2012
+- id: 401
+  type: Pro
+  name: 363-facebook-open-graph
+  published_at: Jul 02, 2012
+- id: 400
+  type: Normal
+  name: 362-exporting-csv-and-excel
+  published_at: Jul 02, 2012
+- id: 399
+  type: Pro
+  name: 261-testing-javascript-with-jasmine-revised
+  published_at: Jun 28, 2012
+- id: 398
+  type: Pro
+  name: 361-facebook-graph-api
+  published_at: Jun 25, 2012
+- id: 397
+  type: Normal
+  name: 360-facebook-authentication
+  published_at: Jun 25, 2012
+- id: 396
+  type: Pro
+  name: 077-destroy-without-javascript-revised
+  published_at: Jun 16, 2012
+- id: 395
+  type: Pro
+  name: 359-twitter-integration
+  published_at: Jun 15, 2012
+- id: 394
+  type: Normal
+  name: 358-brakeman
+  published_at: Jun 15, 2012
+- id: 393
+  type: Pro
+  name: 048-console-tricks-revised
+  published_at: Jun 09, 2012
+- id: 392
+  type: Pro
+  name: 357-adding-ssl
+  published_at: Jun 08, 2012
+- id: 391
+  type: Normal
+  name: 356-dangers-of-session-hijacking
+  published_at: Jun 08, 2012
+- id: 390
+  type: Pro
+  name: 241-simple-omniauth-revised
+  published_at: Jun 02, 2012
+- id: 389
+  type: Pro
+  name: 355-hacking-with-arel
+  published_at: May 30, 2012
+- id: 388
+  type: Normal
+  name: 354-squeel
+  published_at: May 30, 2012
+- id: 387
+  type: Pro
+  name: 087-generating-rss-feeds-revised
+  published_at: May 26, 2012
+- id: 386
+  type: Pro
+  name: 353-oauth-with-doorkeeper
+  published_at: May 23, 2012
+- id: 385
+  type: Normal
+  name: 352-securing-an-api
+  published_at: May 23, 2012
+- id: 384
+  type: Pro
+  name: 154-polymorphic-association-revised
+  published_at: May 19, 2012
+- id: 383
+  type: Pro
+  name: 351-a-look-at-meteor
+  published_at: May 16, 2012
+- id: 382
+  type: Normal
+  name: 350-rest-api-versioning
+  published_at: May 16, 2012
+- id: 381
+  type: Pro
+  name: 207-syntax-highlighting-revised
+  published_at: May 11, 2012
+- id: 380
+  type: Pro
+  name: 349-rails-modularity
+  published_at: May 09, 2012
+- id: 379
+  type: Normal
+  name: 348-the-rails-api-gem
+  published_at: May 09, 2012
+- id: 378
+  type: Pro
+  name: 258-token-fields-revised
+  published_at: May 05, 2012
+- id: 377
+  type: Normal
+  name: 347-rubber-and-amazon-ec2
+  published_at: May 03, 2012
+- id: 376
+  type: Normal
+  name: 346-wizard-forms-with-wicked
+  published_at: May 03, 2012
+- id: 375
+  type: Pro
+  name: 061-sending-email-revised
+  published_at: Apr 28, 2012
+- id: 373
+  type: Pro
+  name: 345-hstore
+  published_at: Apr 24, 2012
+- id: 374
+  type: Normal
+  name: 344-queue-classic
+  published_at: Apr 24, 2012
+- id: 372
+  type: Pro
+  name: 196-nested-model-form-revised
+  published_at: Apr 19, 2012
+- id: 370
+  type: Pro
+  name: 343-full-text-search-in-postgresql
+  published_at: Apr 17, 2012
+- id: 371
+  type: Normal
+  name: 342-migrating-to-postgresql
+  published_at: Apr 17, 2012
+- id: 369
+  type: Pro
+  name: 056-the-logger-revised
+  published_at: Apr 13, 2012
+- id: 368
+  type: Pro
+  name: 341-asset-pipeline-in-production
+  published_at: Apr 11, 2012
+- id: 367
+  type: Normal
+  name: 340-datatables
+  published_at: Apr 11, 2012
+- id: 366
+  type: Pro
+  name: 054-debugging-ruby-revised
+  published_at: Apr 07, 2012
+- id: 365
+  type: Pro
+  name: 339-chef-solo-basics
+  published_at: Apr 06, 2012
+- id: 364
+  type: Normal
+  name: 338-globalize3
+  published_at: Apr 04, 2012
+- id: 363
+  type: Pro
+  name: 138-i18n-revised
+  published_at: Mar 29, 2012
+- id: 362
+  type: Pro
+  name: 337-capistrano-recipes
+  published_at: Mar 27, 2012
+- id: 361
+  type: Normal
+  name: 336-copycopter
+  published_at: Mar 27, 2012
+- id: 360
+  type: Pro
+  name: 133-capistrano-tasks-revised
+  published_at: Mar 24, 2012
+- id: 359
+  type: Pro
+  name: 335-deploying-to-a-vps
+  published_at: Mar 21, 2012
+- id: 358
+  type: Normal
+  name: 334-compass-css-sprites
+  published_at: Mar 21, 2012
+- id: 357
+  type: Pro
+  name: 201-bundler-revised
+  published_at: Mar 16, 2012
+- id: 356
+  type: Pro
+  name: 333-extending-refinery-cms
+  published_at: Mar 14, 2012
+- id: 355
+  type: Normal
+  name: 332-refinery-cms-basics
+  published_at: Mar 14, 2012
+- id: 354
+  type: Pro
+  name: 026-hackers-love-mass-assignment-revised
+  published_at: Mar 08, 2012
+- id: 353
+  type: Pro
+  name: 331-a-b-testing-with-split
+  published_at: Mar 07, 2012
+- id: 352
+  type: Normal
+  name: 330-better-sass-with-bourbon
+  published_at: Mar 07, 2012
+- id: 351
+  type: Pro
+  name: 234-simple-form-revised
+  published_at: Mar 03, 2012
+- id: 350
+  type: Pro
+  name: 329-more-on-twitter-bootstrap
+  published_at: Feb 28, 2012
+- id: 349
+  type: Normal
+  name: 328-twitter-bootstrap-basics
+  published_at: Feb 28, 2012
+- id: 348
+  type: Pro
+  name: 250-authentication-from-scratch-revised
+  published_at: Feb 25, 2012
+- id: 347
+  type: Pro
+  name: 327-minitest-with-rails
+  published_at: Feb 21, 2012
+- id: 346
+  type: Normal
+  name: 326-activeattr
+  published_at: Feb 21, 2012
+- id: 345
+  type: Pro
+  name: 090-fragment-caching-revised
+  published_at: Feb 18, 2012
+- id: 344
+  type: Pro
+  name: 325-backbone-on-rails-part-2
+  published_at: Feb 13, 2012
+- id: 343
+  type: Normal
+  name: 324-passing-data-to-javascript
+  published_at: Feb 13, 2012
+- id: 342
+  type: Pro
+  name: 169-dynamic-page-caching-revised
+  published_at: Feb 11, 2012
+- id: 341
+  type: Pro
+  name: 323-backbone-on-rails-part-1
+  published_at: Feb 08, 2012
+- id: 340
+  type: Normal
+  name: 322-rabl
+  published_at: Feb 08, 2012
+- id: 339
+  type: Pro
+  name: 089-page-caching-revised
+  published_at: Feb 02, 2012
+- id: 338
+  type: Pro
+  name: 321-http-caching
+  published_at: Jan 30, 2012
+- id: 337
+  type: Normal
+  name: 320-jbuilder
+  published_at: Jan 30, 2012
+- id: 336
+  type: Pro
+  name: 150-rails-metal-revised
+  published_at: Jan 27, 2012
+- id: 335
+  type: Pro
+  name: 319-rails-middleware-walkthrough
+  published_at: Jan 23, 2012
+- id: 334
+  type: Normal
+  name: 318-upgrading-to-rails-3-2
+  published_at: Jan 23, 2012
+- id: 333
+  type: Pro
+  name: 072-adding-an-environment-revised
+  published_at: Jan 19, 2012
+- id: 332
+  type: Pro
+  name: 317-rack-app-from-scratch
+  published_at: Jan 16, 2012
+- id: 331
+  type: Normal
+  name: 316-private-pub
+  published_at: Jan 16, 2012
+- id: 330
+  type: Pro
+  name: 123-subdomains-revised
+  published_at: Jan 13, 2012
+- id: 329
+  type: Pro
+  name: 315-rollout-and-degrade
+  published_at: Jan 09, 2012
+- id: 328
+  type: Normal
+  name: 314-pretty-urls-with-friendlyid
+  published_at: Jan 09, 2012
+- id: 327
+  type: Pro
+  name: 171-delayed-job-revised
+  published_at: Jan 07, 2012
+- id: 326
+  type: Pro
+  name: 313-receiving-email-with-mailman
+  published_at: Jan 02, 2012
+- id: 325
+  type: Normal
+  name: 312-sending-html-email
+  published_at: Jan 02, 2012
+- id: 324
+  type: Pro
+  name: 164-cron-in-ruby-revised
+  published_at: Dec 29, 2011
+- id: 323
+  type: Pro
+  name: 311-form-builders
+  published_at: Dec 26, 2011
+- id: 322
+  type: Normal
+  name: 310-getting-started-with-rails
+  published_at: Dec 26, 2011
+- id: 321
+  type: Pro
+  name: 017-habtm-checkboxes-revised
+  published_at: Dec 22, 2011
+- id: 320
+  type: Pro
+  name: 309-a-shell-scripting-story
+  published_at: Dec 19, 2011
+- id: 319
+  type: Normal
+  name: 308-oh-my-zsh
+  published_at: Dec 19, 2011
+- id: 318
+  type: Pro
+  name: 114-endless-page-revised
+  published_at: Dec 16, 2011
+- id: 317
+  type: Pro
+  name: 307-elasticsearch-part-2
+  published_at: Dec 12, 2011
+- id: 316
+  type: Normal
+  name: 306-elasticsearch-part-1
+  published_at: Dec 12, 2011
+- id: 315
+  type: Pro
+  name: 120-thinking-sphinx-revised
+  published_at: Dec 09, 2011
+- id: 314
+  type: Pro
+  name: 305-authentication-with-warden
+  published_at: Dec 05, 2011
+- id: 313
+  type: Normal
+  name: 304-omniauth-identity
+  published_at: Dec 05, 2011
+- id: 312
+  type: Pro
+  name: 182-cropping-images-revised
+  published_at: Dec 02, 2011
+- id: 311
+  type: Pro
+  name: 303-publishing-a-gem
+  published_at: Nov 28, 2011
+- id: 310
+  type: Normal
+  name: 302-in-place-editing
+  published_at: Nov 28, 2011
+- id: 309
+  type: Pro
+  name: 088-dynamic-select-menus-revised
+  published_at: Nov 25, 2011
+- id: 308
+  type: Pro
+  name: 301-extracting-a-ruby-gem
+  published_at: Nov 21, 2011
+- id: 307
+  type: Normal
+  name: 300-contributing-to-open-source
+  published_at: Nov 21, 2011
+- id: 306
+  type: Pro
+  name: 111-advanced-search-form-revised
+  published_at: Nov 17, 2011
+- id: 305
+  type: Pro
+  name: 299-rails-initialization-walkthrough
+  published_at: Nov 14, 2011
+- id: 304
+  type: Normal
+  name: 298-getting-started-with-spree
+  published_at: Nov 14, 2011
+- id: 303
+  type: Pro
+  name: 102-auto-complete-association-revised
+  published_at: Nov 10, 2011
+- id: 302
+  type: Pro
+  name: 297-running-javascript-in-ruby
+  published_at: Nov 07, 2011
+- id: 301
+  type: Normal
+  name: 296-mercury-editor
+  published_at: Nov 07, 2011
+- id: 300
+  type: Pro
+  name: 153-pdfs-with-prawn-revised
+  published_at: Nov 03, 2011
+- id: 299
+  type: Pro
+  name: 295-sharing-mustache-templates
+  published_at: Oct 31, 2011
+- id: 298
+  type: Normal
+  name: 294-playing-with-pjax
+  published_at: Oct 31, 2011
+- id: 297
+  type: Pro
+  name: 158-factories-not-fixtures-revised
+  published_at: Oct 27, 2011
+- id: 296
+  type: Pro
+  name: 293-nginx-unicorn
+  published_at: Oct 24, 2011
+- id: 295
+  type: Normal
+  name: 292-virtual-machines-with-vagrant
+  published_at: Oct 24, 2011
+- id: 294
+  type: Pro
+  name: 104-exception-notifications-revised
+  published_at: Oct 20, 2011
+- id: 293
+  type: Pro
+  name: 291-testing-with-vcr
+  published_at: Oct 17, 2011
+- id: 292
+  type: Normal
+  name: 290-soap-with-savon
+  published_at: Oct 17, 2011
+- id: 291
+  type: Pro
+  name: 147-sortable-lists-revised
+  published_at: Oct 13, 2011
+- id: 290
+  type: Pro
+  name: 289-paypal-recurring-billing
+  published_at: Oct 10, 2011
+- id: 289
+  type: Normal
+  name: 288-billing-with-stripe
+  published_at: Oct 10, 2011
+- id: 288
+  type: Pro
+  name: 051-will-paginate-revised
+  published_at: Oct 06, 2011
+- id: 287
+  type: Pro
+  name: 287-presenters-from-scratch
+  published_at: Oct 03, 2011
+- id: 286
+  type: Normal
+  name: 286-draper
+  published_at: Oct 03, 2011
+- id: 285
+  type: Normal
+  name: 285-spork
+  published_at: Sep 26, 2011
+- id: 284
+  type: Normal
+  name: 284-active-admin
+  published_at: Sep 19, 2011
+- id: 283
+  type: Normal
+  name: 283-authentication-with-sorcery
+  published_at: Sep 12, 2011
+- id: 282
+  type: Normal
+  name: 282-upgrading-to-rails-3-1
+  published_at: Sep 05, 2011
+- id: 281
+  type: Normal
+  name: 281-foreman
+  published_at: Aug 29, 2011
+- id: 280
+  type: Normal
+  name: 280-pry-with-rails
+  published_at: Aug 22, 2011
+- id: 279
+  type: Normal
+  name: 279-understanding-the-asset-pipeline
+  published_at: Aug 15, 2011
+- id: 278
+  type: Normal
+  name: 278-search-with-sunspot
+  published_at: Aug 08, 2011
+- id: 277
+  type: Normal
+  name: 277-mountable-engines
+  published_at: Aug 01, 2011
+- id: 276
+  type: Normal
+  name: 276-testing-time-web-requests
+  published_at: Jul 25, 2011
+- id: 275
+  type: Normal
+  name: 275-how-i-test
+  published_at: Jul 18, 2011
+- id: 274
+  type: Normal
+  name: 274-remember-me-reset-password
+  published_at: Jul 11, 2011
+- id: 273
+  type: Normal
+  name: 273-geocoder
+  published_at: Jul 04, 2011
+- id: 272
+  type: Normal
+  name: 272-markdown-with-redcarpet
+  published_at: Jun 27, 2011
+- id: 271
+  type: Normal
+  name: 271-resque
+  published_at: Jun 20, 2011
+- id: 270
+  type: Normal
+  name: 270-authentication-in-rails-3-1
+  published_at: Jun 13, 2011
+- id: 269
+  type: Normal
+  name: 269-template-inheritance
+  published_at: Jun 06, 2011
+- id: 268
+  type: Normal
+  name: 268-sass-basics
+  published_at: May 30, 2011
+- id: 267
+  type: Normal
+  name: 267-coffeescript-basics
+  published_at: May 23, 2011
+- id: 266
+  type: Normal
+  name: 266-http-streaming
+  published_at: May 16, 2011
+- id: 265
+  type: Normal
+  name: 265-rails-3-1-overview
+  published_at: May 09, 2011
+- id: 264
+  type: Normal
+  name: 264-guard
+  published_at: May 02, 2011
+- id: 263
+  type: Normal
+  name: 263-client-side-validations
+  published_at: Apr 25, 2011
+- id: 262
+  type: Normal
+  name: 262-trees-with-ancestry
+  published_at: Apr 18, 2011
+- id: 261
+  type: Normal
+  name: 261-testing-javascript-with-jasmine
+  published_at: Apr 11, 2011
+- id: 260
+  type: Normal
+  name: 260-messaging-with-faye
+  published_at: Apr 04, 2011
+- id: 259
+  type: Normal
+  name: 259-decent-exposure
+  published_at: Mar 28, 2011
+- id: 258
+  type: Normal
+  name: 258-token-fields
+  published_at: Mar 21, 2011
+- id: 257
+  type: Normal
+  name: 257-request-specs-and-capybara
+  published_at: Mar 14, 2011
+- id: 256
+  type: Normal
+  name: 256-i18n-backends
+  published_at: Mar 07, 2011
+- id: 255
+  type: Normal
+  name: 255-undo-with-paper-trail
+  published_at: Feb 28, 2011
+- id: 254
+  type: Normal
+  name: 254-pagination-with-kaminari
+  published_at: Feb 21, 2011
+- id: 253
+  type: Normal
+  name: 253-carrierwave-file-uploads
+  published_at: Feb 14, 2011
+- id: 252
+  type: Normal
+  name: 252-metrics-metrics-metrics
+  published_at: Feb 07, 2011
+- id: 251
+  type: Normal
+  name: 251-metawhere-metasearch
+  published_at: Jan 31, 2011
+- id: 250
+  type: Normal
+  name: 250-authentication-from-scratch
+  published_at: Jan 24, 2011
+- id: 249
+  type: Normal
+  name: 249-notifications-in-rails-3
+  published_at: Jan 17, 2011
+- id: 248
+  type: Normal
+  name: 248-offline-apps-part-2
+  published_at: Jan 10, 2011
+- id: 247
+  type: Normal
+  name: 247-offline-apps-part-1
+  published_at: Jan 03, 2011
+- id: 246
+  type: Normal
+  name: 246-ajax-history-state
+  published_at: Dec 27, 2010
+- id: 245
+  type: Normal
+  name: 245-new-gem-with-bundler
+  published_at: Dec 20, 2010
+- id: 244
+  type: Normal
+  name: 244-gravatar
+  published_at: Dec 13, 2010
+- id: 243
+  type: Normal
+  name: 243-beanstalkd-and-stalker
+  published_at: Dec 06, 2010
+- id: 242
+  type: Normal
+  name: 242-thor
+  published_at: Nov 29, 2010
+- id: 241
+  type: Normal
+  name: 241-simple-omniauth
+  published_at: Nov 22, 2010
+- id: 240
+  type: Normal
+  name: 240-search-sort-paginate-with-ajax
+  published_at: Nov 15, 2010
+- id: 239
+  type: Normal
+  name: 239-activerecord-relation-walkthrough
+  published_at: Nov 07, 2010
+- id: 238
+  type: Normal
+  name: 238-mongoid
+  published_at: Nov 01, 2010
+- id: 237
+  type: Normal
+  name: 237-dynamic-attr-accessible
+  published_at: Oct 25, 2010
+- id: 236
+  type: Normal
+  name: 236-omniauth-part-2
+  published_at: Oct 13, 2010
+- id: 235
+  type: Normal
+  name: 235-omniauth-part-1
+  published_at: Oct 11, 2010
+- id: 234
+  type: Normal
+  name: 234-simple-form
+  published_at: Oct 04, 2010
+- id: 233
+  type: Normal
+  name: 233-engage-with-devise
+  published_at: Sep 27, 2010
+- id: 232
+  type: Normal
+  name: 232-routing-walkthrough-part-2
+  published_at: Sep 19, 2010
+- id: 231
+  type: Normal
+  name: 231-routing-walkthrough
+  published_at: Sep 13, 2010
+- id: 230
+  type: Normal
+  name: 230-inherited-resources
+  published_at: Sep 06, 2010
+- id: 229
+  type: Normal
+  name: 229-polling-for-changes
+  published_at: Aug 30, 2010
+- id: 228
+  type: Normal
+  name: 228-sortable-table-columns
+  published_at: Aug 23, 2010
+- id: 227
+  type: Normal
+  name: 227-upgrading-to-rails-3-part-3
+  published_at: Aug 16, 2010
+- id: 226
+  type: Normal
+  name: 226-upgrading-to-rails-3-part-2
+  published_at: Aug 09, 2010
+- id: 225
+  type: Normal
+  name: 225-upgrading-to-rails-3-part-1
+  published_at: Aug 02, 2010
+- id: 224
+  type: Normal
+  name: 224-controllers-in-rails-3
+  published_at: Jul 26, 2010
+- id: 223
+  type: Normal
+  name: 223-charts
+  published_at: Jul 19, 2010
+- id: 222
+  type: Normal
+  name: 222-rack-in-rails-3
+  published_at: Jul 12, 2010
+- id: 221
+  type: Normal
+  name: 221-subdomains-in-rails-3
+  published_at: Jul 05, 2010
+- id: 220
+  type: Normal
+  name: 220-pdfkit
+  published_at: Jun 28, 2010
+- id: 219
+  type: Normal
+  name: 219-active-model
+  published_at: Jun 21, 2010
+- id: 218
+  type: Normal
+  name: 218-making-generators-in-rails-3
+  published_at: Jun 14, 2010
+- id: 217
+  type: Normal
+  name: 217-multistep-forms
+  published_at: Jun 07, 2010
+- id: 216
+  type: Normal
+  name: 216-generators-in-rails-3
+  published_at: May 31, 2010
+- id: 215
+  type: Normal
+  name: 215-advanced-queries-in-rails-3
+  published_at: May 24, 2010
+- id: 214
+  type: Normal
+  name: 214-a-b-testing-with-a-bingo
+  published_at: May 17, 2010
+- id: 213
+  type: Normal
+  name: 213-calendars
+  published_at: May 10, 2010
+- id: 212
+  type: Normal
+  name: 212-refactoring-dynamic-delegator
+  published_at: May 03, 2010
+- id: 211
+  type: Normal
+  name: 211-validations-in-rails-3
+  published_at: Apr 26, 2010
+- id: 210
+  type: Normal
+  name: 210-customizing-devise
+  published_at: Apr 19, 2010
+- id: 209
+  type: Normal
+  name: 209-introducing-devise
+  published_at: Apr 12, 2010
+- id: 208
+  type: Normal
+  name: 208-erb-blocks-in-rails-3
+  published_at: Apr 05, 2010
+- id: 207
+  type: Normal
+  name: 207-syntax-highlighting
+  published_at: Mar 29, 2010
+- id: 206
+  type: Normal
+  name: 206-action-mailer-in-rails-3
+  published_at: Mar 22, 2010
+- id: 205
+  type: Normal
+  name: 205-unobtrusive-javascript
+  published_at: Mar 15, 2010
+- id: 204
+  type: Normal
+  name: 204-xss-protection-in-rails-3
+  published_at: Mar 08, 2010
+- id: 203
+  type: Normal
+  name: 203-routing-in-rails-3
+  published_at: Mar 01, 2010
+- id: 202
+  type: Normal
+  name: 202-active-record-queries-in-rails-3
+  published_at: Feb 22, 2010
+- id: 201
+  type: Normal
+  name: 201-bundler
+  published_at: Feb 15, 2010
+- id: 200
+  type: Normal
+  name: 200-rails-3-beta-and-rvm
+  published_at: Feb 08, 2010
+- id: 199
+  type: Normal
+  name: 199-mobile-devices
+  published_at: Feb 01, 2010
+- id: 198
+  type: Normal
+  name: 198-edit-multiple-individually
+  published_at: Jan 25, 2010
+- id: 197
+  type: Normal
+  name: 197-nested-model-form-part-2
+  published_at: Jan 18, 2010
+- id: 196
+  type: Normal
+  name: 196-nested-model-form-part-1
+  published_at: Jan 11, 2010
+- id: 195
+  type: Normal
+  name: 195-my-favorite-web-apps-in-2009
+  published_at: Jan 04, 2010
+- id: 194
+  type: Normal
+  name: 194-mongodb-and-mongomapper
+  published_at: Dec 28, 2009
+- id: 193
+  type: Normal
+  name: 193-tableless-model
+  published_at: Dec 21, 2009
+- id: 192
+  type: Normal
+  name: 192-authorization-with-cancan
+  published_at: Dec 14, 2009
+- id: 191
+  type: Normal
+  name: 191-mechanize
+  published_at: Dec 07, 2009
+- id: 190
+  type: Normal
+  name: 190-screen-scraping-with-nokogiri
+  published_at: Nov 30, 2009
+- id: 189
+  type: Normal
+  name: 189-embedded-association
+  published_at: Nov 23, 2009
+- id: 188
+  type: Normal
+  name: 188-declarative-authorization
+  published_at: Nov 16, 2009
+- id: 187
+  type: Normal
+  name: 187-testing-exceptions
+  published_at: Nov 09, 2009
+- id: 186
+  type: Normal
+  name: 186-pickle-with-cucumber
+  published_at: Nov 02, 2009
+- id: 185
+  type: Normal
+  name: 185-formtastic-part-2
+  published_at: Oct 26, 2009
+- id: 184
+  type: Normal
+  name: 184-formtastic-part-1
+  published_at: Oct 19, 2009
+- id: 183
+  type: Normal
+  name: 183-gemcutter-jeweler
+  published_at: Oct 12, 2009
+- id: 182
+  type: Normal
+  name: 182-cropping-images
+  published_at: Oct 05, 2009
+- id: 181
+  type: Normal
+  name: 181-include-vs-joins
+  published_at: Sep 28, 2009
+- id: 180
+  type: Normal
+  name: 180-finding-unused-css
+  published_at: Sep 21, 2009
+- id: 179
+  type: Normal
+  name: 179-seed-data
+  published_at: Sep 14, 2009
+- id: 178
+  type: Normal
+  name: 178-seven-security-tips
+  published_at: Sep 07, 2009
+- id: 177
+  type: Normal
+  name: 177-model-versioning
+  published_at: Aug 31, 2009
+- id: 176
+  type: Normal
+  name: 176-searchlogic
+  published_at: Aug 24, 2009
+- id: 175
+  type: Normal
+  name: 175-ajax-history-and-bookmarks
+  published_at: Aug 17, 2009
+- id: 174
+  type: Normal
+  name: 174-pagination-with-ajax
+  published_at: Aug 10, 2009
+- id: 173
+  type: Normal
+  name: 173-screen-scraping-with-scrapi
+  published_at: Aug 03, 2009
+- id: 172
+  type: Normal
+  name: 172-touch-and-cache
+  published_at: Jul 27, 2009
+- id: 171
+  type: Normal
+  name: 171-delayed-job
+  published_at: Jul 20, 2009
+- id: 170
+  type: Normal
+  name: 170-openid-with-authlogic
+  published_at: Jul 13, 2009
+- id: 169
+  type: Normal
+  name: 169-dynamic-page-caching
+  published_at: Jul 06, 2009
+- id: 168
+  type: Normal
+  name: 168-feed-parsing
+  published_at: Jun 29, 2009
+- id: 167
+  type: Normal
+  name: 167-more-on-virtual-attributes
+  published_at: Jun 22, 2009
+- id: 166
+  type: Normal
+  name: 166-metric-fu
+  published_at: Jun 15, 2009
+- id: 165
+  type: Normal
+  name: 165-edit-multiple
+  published_at: Jun 08, 2009
+- id: 164
+  type: Normal
+  name: 164-cron-in-ruby
+  published_at: Jun 01, 2009
+- id: 163
+  type: Normal
+  name: 163-self-referential-association
+  published_at: May 25, 2009
+- id: 162
+  type: Normal
+  name: 162-tree-based-navigation
+  published_at: May 18, 2009
+- id: 161
+  type: Normal
+  name: 161-three-profiling-tools
+  published_at: May 11, 2009
+- id: 160
+  type: Normal
+  name: 160-authlogic
+  published_at: May 04, 2009
+- id: 159
+  type: Normal
+  name: 159-more-on-cucumber
+  published_at: Apr 27, 2009
+- id: 158
+  type: Normal
+  name: 158-factories-not-fixtures
+  published_at: Apr 20, 2009
+- id: 157
+  type: Normal
+  name: 157-rspec-matchers-macros
+  published_at: Apr 13, 2009
+- id: 156
+  type: Normal
+  name: 156-webrat
+  published_at: Apr 06, 2009
+- id: 155
+  type: Normal
+  name: 155-beginning-with-cucumber
+  published_at: Mar 30, 2009
+- id: 154
+  type: Normal
+  name: 154-polymorphic-association
+  published_at: Mar 23, 2009
+- id: 153
+  type: Normal
+  name: 153-pdfs-with-prawn
+  published_at: Mar 16, 2009
+- id: 152
+  type: Normal
+  name: 152-rails-2-3-extras
+  published_at: Mar 09, 2009
+- id: 151
+  type: Normal
+  name: 151-rack-middleware
+  published_at: Mar 02, 2009
+- id: 150
+  type: Normal
+  name: 150-rails-metal
+  published_at: Feb 23, 2009
+- id: 149
+  type: Normal
+  name: 149-rails-engines
+  published_at: Feb 16, 2009
+- id: 148
+  type: Normal
+  name: 148-app-templates-in-rails-2-3
+  published_at: Feb 09, 2009
+- id: 147
+  type: Normal
+  name: 147-sortable-lists
+  published_at: Feb 02, 2009
+- id: 146
+  type: Normal
+  name: 146-paypal-express-checkout
+  published_at: Jan 26, 2009
+- id: 145
+  type: Normal
+  name: 145-integrating-active-merchant
+  published_at: Jan 19, 2009
+- id: 144
+  type: Normal
+  name: 144-active-merchant-basics
+  published_at: Jan 12, 2009
+- id: 143
+  type: Normal
+  name: 143-paypal-security
+  published_at: Jan 05, 2009
+- id: 142
+  type: Normal
+  name: 142-paypal-notifications
+  published_at: Dec 29, 2008
+- id: 141
+  type: Normal
+  name: 141-paypal-basics
+  published_at: Dec 22, 2008
+- id: 140
+  type: Normal
+  name: 140-rails-2-2-extras
+  published_at: Dec 15, 2008
+- id: 139
+  type: Normal
+  name: 139-nested-resources
+  published_at: Dec 08, 2008
+- id: 138
+  type: Normal
+  name: 138-i18n
+  published_at: Dec 01, 2008
+- id: 137
+  type: Normal
+  name: 137-memoization
+  published_at: Nov 24, 2008
+- id: 136
+  type: Normal
+  name: 136-jquery
+  published_at: Nov 17, 2008
+- id: 135
+  type: Normal
+  name: 135-making-a-gem
+  published_at: Nov 10, 2008
+- id: 134
+  type: Normal
+  name: 134-paperclip
+  published_at: Nov 03, 2008
+- id: 133
+  type: Normal
+  name: 133-capistrano-tasks
+  published_at: Oct 27, 2008
+- id: 132
+  type: Normal
+  name: 132-helpers-outside-views
+  published_at: Oct 20, 2008
+- id: 131
+  type: Normal
+  name: 131-going-back
+  published_at: Oct 12, 2008
+- id: 130
+  type: Normal
+  name: 130-monitoring-with-god
+  published_at: Oct 05, 2008
+- id: 129
+  type: Normal
+  name: 129-custom-daemon
+  published_at: Sep 29, 2008
+- id: 128
+  type: Normal
+  name: 128-starling-and-workling
+  published_at: Sep 22, 2008
+- id: 127
+  type: Normal
+  name: 127-rake-in-background
+  published_at: Sep 15, 2008
+- id: 126
+  type: Normal
+  name: 126-populating-a-database
+  published_at: Sep 08, 2008
+- id: 125
+  type: Normal
+  name: 125-dynamic-layouts
+  published_at: Sep 01, 2008
+- id: 124
+  type: Normal
+  name: 124-beta-invitations
+  published_at: Aug 25, 2008
+- id: 123
+  type: Normal
+  name: 123-subdomains
+  published_at: Aug 18, 2008
+- id: 122
+  type: Normal
+  name: 122-passenger-in-development
+  published_at: Aug 11, 2008
+- id: 121
+  type: Normal
+  name: 121-non-active-record-model
+  published_at: Aug 04, 2008
+- id: 120
+  type: Normal
+  name: 120-thinking-sphinx
+  published_at: Jul 28, 2008
+- id: 119
+  type: Normal
+  name: 119-session-based-model
+  published_at: Jul 21, 2008
+- id: 118
+  type: Normal
+  name: 118-liquid
+  published_at: Jul 14, 2008
+- id: 117
+  type: Normal
+  name: 117-semi-static-pages
+  published_at: Jul 07, 2008
+- id: 116
+  type: Normal
+  name: 116-selenium
+  published_at: Jun 30, 2008
+- id: 115
+  type: Normal
+  name: 115-caching-in-rails-2-1
+  published_at: Jun 23, 2008
+- id: 114
+  type: Normal
+  name: 114-endless-page
+  published_at: Jun 16, 2008
+- id: 113
+  type: Normal
+  name: 113-contributing-to-rails-with-git
+  published_at: Jun 09, 2008
+- id: 112
+  type: Normal
+  name: 112-anonymous-scopes
+  published_at: Jun 02, 2008
+- id: 111
+  type: Normal
+  name: 111-advanced-search-form
+  published_at: May 26, 2008
+- id: 110
+  type: Normal
+  name: 110-gem-dependencies
+  published_at: May 23, 2008
+- id: 109
+  type: Normal
+  name: 109-tracking-attribute-changes
+  published_at: May 21, 2008
+- id: 108
+  type: Normal
+  name: 108-named-scope
+  published_at: May 19, 2008
+- id: 107
+  type: Normal
+  name: 107-migrations-in-rails-2-1
+  published_at: May 16, 2008
+- id: 106
+  type: Normal
+  name: 106-time-zones-in-rails-2-1
+  published_at: May 14, 2008
+- id: 105
+  type: Normal
+  name: 105-gitting-rails-2-1-rc1
+  published_at: May 12, 2008
+- id: 104
+  type: Normal
+  name: 104-exception-notifications
+  published_at: May 05, 2008
+- id: 103
+  type: Normal
+  name: 103-site-wide-announcements
+  published_at: Apr 28, 2008
+- id: 102
+  type: Normal
+  name: 102-auto-complete-association
+  published_at: Apr 21, 2008
+- id: 101
+  type: Normal
+  name: 101-refactoring-out-helper-object
+  published_at: Apr 14, 2008
+- id: 100
+  type: Normal
+  name: 100-5-view-tips
+  published_at: Apr 07, 2008
+- id: 99
+  type: Normal
+  name: 099-complex-partials
+  published_at: Mar 31, 2008
+- id: 98
+  type: Normal
+  name: 098-request-profiling
+  published_at: Mar 24, 2008
+- id: 97
+  type: Normal
+  name: 097-analyzing-the-production-log
+  published_at: Mar 17, 2008
+- id: 96
+  type: Normal
+  name: 096-git-on-rails
+  published_at: Mar 10, 2008
+- id: 95
+  type: Normal
+  name: 095-more-on-activeresource
+  published_at: Mar 02, 2008
+- id: 94
+  type: Normal
+  name: 094-activeresource-basics
+  published_at: Feb 24, 2008
+- id: 93
+  type: Normal
+  name: 093-action-caching
+  published_at: Feb 17, 2008
+- id: 92
+  type: Normal
+  name: 092-make-resourceful
+  published_at: Feb 10, 2008
+- id: 91
+  type: Normal
+  name: 091-refactoring-long-methods
+  published_at: Feb 03, 2008
+- id: 90
+  type: Normal
+  name: 090-fragment-caching
+  published_at: Jan 27, 2008
+- id: 89
+  type: Normal
+  name: 089-page-caching
+  published_at: Jan 20, 2008
+- id: 88
+  type: Normal
+  name: 088-dynamic-select-menus
+  published_at: Jan 13, 2008
+- id: 87
+  type: Normal
+  name: 087-generating-rss-feeds
+  published_at: Jan 06, 2008
+- id: 86
+  type: Normal
+  name: 086-logging-variables
+  published_at: Dec 30, 2007
+- id: 85
+  type: Normal
+  name: 085-yaml-configuration-file
+  published_at: Dec 23, 2007
+- id: 84
+  type: Normal
+  name: 084-cookie-based-session-store
+  published_at: Dec 16, 2007
+- id: 83
+  type: Normal
+  name: 083-migrations-in-rails-2-0
+  published_at: Dec 09, 2007
+- id: 82
+  type: Normal
+  name: 082-http-basic-authentication
+  published_at: Dec 02, 2007
+- id: 81
+  type: Normal
+  name: 081-fixtures-in-rails-2-0
+  published_at: Nov 25, 2007
+- id: 80
+  type: Normal
+  name: 080-simplify-views-with-rails-2-0
+  published_at: Nov 18, 2007
+- id: 79
+  type: Normal
+  name: 079-generate-named-routes
+  published_at: Nov 11, 2007
+- id: 78
+  type: Normal
+  name: 078-generating-pdf-documents
+  published_at: Nov 04, 2007
+- id: 77
+  type: Normal
+  name: 077-destroy-without-javascript
+  published_at: Oct 29, 2007
+- id: 76
+  type: Normal
+  name: 076-scope-out
+  published_at: Oct 22, 2007
+- id: 75
+  type: Normal
+  name: 075-complex-forms-part-3
+  published_at: Oct 15, 2007
+- id: 74
+  type: Normal
+  name: 074-complex-forms-part-2
+  published_at: Oct 08, 2007
+- id: 73
+  type: Normal
+  name: 073-complex-forms-part-1
+  published_at: Oct 01, 2007
+- id: 72
+  type: Normal
+  name: 072-adding-an-environment
+  published_at: Sep 24, 2007
+- id: 71
+  type: Normal
+  name: 071-testing-controllers-with-rspec
+  published_at: Sep 17, 2007
+- id: 70
+  type: Normal
+  name: 070-custom-routes
+  published_at: Sep 10, 2007
+- id: 69
+  type: Normal
+  name: 069-markaby-in-helper
+  published_at: Sep 03, 2007
+- id: 68
+  type: Normal
+  name: 068-openid-authentication
+  published_at: Aug 27, 2007
+- id: 67
+  type: Normal
+  name: 067-restful-authentication
+  published_at: Aug 20, 2007
+- id: 66
+  type: Normal
+  name: 066-custom-rake-tasks
+  published_at: Aug 13, 2007
+- id: 65
+  type: Normal
+  name: 065-stopping-spam-with-akismet
+  published_at: Aug 06, 2007
+- id: 64
+  type: Normal
+  name: 064-custom-helper-modules
+  published_at: Jul 30, 2007
+- id: 63
+  type: Normal
+  name: 063-model-name-in-url
+  published_at: Jul 27, 2007
+- id: 62
+  type: Normal
+  name: 062-hacking-activerecord
+  published_at: Jul 25, 2007
+- id: 61
+  type: Normal
+  name: 061-sending-email
+  published_at: Jul 23, 2007
+- id: 60
+  type: Normal
+  name: 060-testing-without-fixtures
+  published_at: Jul 20, 2007
+- id: 59
+  type: Normal
+  name: 059-optimistic-locking
+  published_at: Jul 18, 2007
+- id: 58
+  type: Normal
+  name: 058-how-to-make-a-generator
+  published_at: Jul 16, 2007
+- id: 57
+  type: Normal
+  name: 057-create-model-through-text-field
+  published_at: Jul 13, 2007
+- id: 56
+  type: Normal
+  name: 056-the-logger
+  published_at: Jul 11, 2007
+- id: 55
+  type: Normal
+  name: 055-cleaning-up-the-view
+  published_at: Jul 09, 2007
+- id: 54
+  type: Normal
+  name: 054-debugging-with-ruby-debug
+  published_at: Jul 06, 2007
+- id: 53
+  type: Normal
+  name: 053-handling-exceptions
+  published_at: Jul 04, 2007
+- id: 52
+  type: Normal
+  name: 052-update-through-checkboxes
+  published_at: Jul 02, 2007
+- id: 51
+  type: Normal
+  name: 051-will-paginate
+  published_at: Jun 29, 2007
+- id: 50
+  type: Normal
+  name: 050-contributing-to-rails
+  published_at: Jun 27, 2007
+- id: 49
+  type: Normal
+  name: 049-reading-the-api
+  published_at: Jun 25, 2007
+- id: 48
+  type: Normal
+  name: 048-console-tricks
+  published_at: Jun 22, 2007
+- id: 47
+  type: Normal
+  name: 047-two-many-to-many
+  published_at: Jun 20, 2007
+- id: 46
+  type: Normal
+  name: 046-catch-all-route
+  published_at: Jun 18, 2007
+- id: 45
+  type: Normal
+  name: 045-rjs-tips
+  published_at: Jun 15, 2007
+- id: 44
+  type: Normal
+  name: 044-debugging-rjs
+  published_at: Jun 13, 2007
+- id: 43
+  type: Normal
+  name: 043-ajax-with-rjs
+  published_at: Jun 11, 2007
+- id: 42
+  type: Normal
+  name: 042-with-options
+  published_at: Jun 08, 2007
+- id: 41
+  type: Normal
+  name: 041-conditional-validations
+  published_at: Jun 06, 2007
+- id: 40
+  type: Normal
+  name: 040-blocks-in-view
+  published_at: Jun 04, 2007
+- id: 39
+  type: Normal
+  name: 039-customize-field-error
+  published_at: Jun 01, 2007
+- id: 38
+  type: Normal
+  name: 038-multibutton-form
+  published_at: May 30, 2007
+- id: 37
+  type: Normal
+  name: 037-simple-search-form
+  published_at: May 28, 2007
+- id: 36
+  type: Normal
+  name: 036-subversion-on-rails
+  published_at: May 25, 2007
+- id: 35
+  type: Normal
+  name: 035-custom-rest-actions
+  published_at: May 23, 2007
+- id: 34
+  type: Normal
+  name: 034-named-routes
+  published_at: May 21, 2007
+- id: 33
+  type: Normal
+  name: 033-making-a-plugin
+  published_at: May 18, 2007
+- id: 32
+  type: Normal
+  name: 032-time-in-text-field
+  published_at: May 16, 2007
+- id: 31
+  type: Normal
+  name: 031-formatting-time
+  published_at: May 14, 2007
+- id: 30
+  type: Normal
+  name: 030-pretty-page-title
+  published_at: May 11, 2007
+- id: 29
+  type: Normal
+  name: 029-group-by-month
+  published_at: May 09, 2007
+- id: 28
+  type: Normal
+  name: 028-in-groups-of
+  published_at: May 07, 2007
+- id: 27
+  type: Normal
+  name: 027-cross-site-scripting
+  published_at: May 04, 2007
+- id: 26
+  type: Normal
+  name: 026-hackers-love-mass-assignment
+  published_at: May 02, 2007
+- id: 25
+  type: Normal
+  name: 025-sql-injection
+  published_at: Apr 30, 2007
+- id: 24
+  type: Normal
+  name: 024-the-stack-trace
+  published_at: Apr 27, 2007
+- id: 23
+  type: Normal
+  name: 023-counter-cache-column
+  published_at: Apr 25, 2007
+- id: 22
+  type: Normal
+  name: 022-eager-loading
+  published_at: Apr 23, 2007
+- id: 21
+  type: Normal
+  name: 021-super-simple-authentication
+  published_at: Apr 20, 2007
+- id: 20
+  type: Normal
+  name: 020-restricting-access
+  published_at: Apr 18, 2007
+- id: 19
+  type: Normal
+  name: 019-where-administration-goes
+  published_at: Apr 16, 2007
+- id: 18
+  type: Normal
+  name: 018-looping-through-flash
+  published_at: Apr 13, 2007
+- id: 17
+  type: Normal
+  name: 017-habtm-checkboxes
+  published_at: Apr 11, 2007
+- id: 16
+  type: Normal
+  name: 016-virtual-attributes
+  published_at: Apr 09, 2007
+- id: 15
+  type: Normal
+  name: 015-fun-with-find-conditions
+  published_at: Apr 06, 2007
+- id: 14
+  type: Normal
+  name: 014-performing-calculations-on-models
+  published_at: Apr 04, 2007
+- id: 13
+  type: Normal
+  name: 013-dangers-of-model-in-session
+  published_at: Apr 02, 2007
+- id: 12
+  type: Normal
+  name: 012-refactoring-user-name-part-3
+  published_at: Mar 30, 2007
+- id: 11
+  type: Normal
+  name: 011-refactoring-user-name-part-2
+  published_at: Mar 28, 2007
+- id: 10
+  type: Normal
+  name: 010-refactoring-user-name-part-1
+  published_at: Mar 26, 2007
+- id: 9
+  type: Normal
+  name: 009-filtering-sensitive-logs
+  published_at: Mar 23, 2007
+- id: 8
+  type: Normal
+  name: 008-layouts-and-content-for
+  published_at: Mar 21, 2007
+- id: 7
+  type: Normal
+  name: 007-all-about-layouts
+  published_at: Mar 19, 2007
+- id: 6
+  type: Normal
+  name: 006-shortcut-blocks-with-symbol-to-proc
+  published_at: Mar 16, 2007
+- id: 5
+  type: Normal
+  name: 005-using-with-scope
+  published_at: Mar 14, 2007
+- id: 4
+  type: Normal
+  name: 004-move-find-into-model
+  published_at: Mar 12, 2007
+- id: 3
+  type: Normal
+  name: 003-find-through-association
+  published_at: Mar 08, 2007
+- id: 2
+  type: Normal
+  name: 002-dynamic-find-by-methods
+  published_at: Mar 06, 2007
+- id: 1
+  type: Normal
+  name: 001-caching-with-instance-variables
+  published_at: Mar 04, 2007

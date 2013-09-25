@@ -7,25 +7,26 @@ module RailsCasts
   class Configuration
       attr_reader :subscription_code
       attr_reader :file_type
+      attr_reader :download_path
     
     def initialize
-      Logger.info 'loading config file'
+      Logger.info 'Loading config file'
       path = './../../config/railscasts.yml'
       if File.exist? path
         config = YAML.load(File.open(path))
         if config["subscription-code"].present?
           @subscription_code = config["subscription-code"]
-          Logger.info 'Ok'
+          Logger.info 'OK'
         else
-          Logger.info 'subscription code is not existed'
+          Logger.info 'Subscription code is not existed'
           raise "Missing Subscription Code Error"
         end
         @file_type = config["file-type"].present? ? config["file-type"] : 'mp4'
         if config["download-path"].present?
           @download_path = config["download-path"]
-          Logger.info 'Ok'
+          Logger.info 'OK'
         else
-          Logger.info 'download path is not existed'
+          Logger.info 'Download path is not existed'
           raise "Missing Download Path Error"
         end
       else
