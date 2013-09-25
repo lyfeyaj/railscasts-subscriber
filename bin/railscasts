@@ -4,11 +4,15 @@ begin
   require 'railscasts'
 end
 
-opt = ARGV.first
-case opt
-when 'update', 'update_all'
-  RailsCasts::Subscriber.new.update
-  RailsCasts::Downloader.new.download
-when 'download'
-  RailsCasts::Downloader.new.download
+begin
+  opt = ARGV.first
+  case opt
+  when 'update', 'update_all'
+    RailsCasts::Subscriber.new.update
+    RailsCasts::Downloader.new.download
+  when 'download'
+    RailsCasts::Downloader.new.download
+  end
+rescue
+  RailsCasts::Logger.info 'There are something wrong.'
 end
