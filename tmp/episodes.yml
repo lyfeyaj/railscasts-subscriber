@@ -1,0 +1,11 @@
+episodes:
+  1:
+    id: 1
+    type: normal
+    name: 1-caching-with-instance-variables
+    published_at: "Aug 13, 2007"
+  2:
+    id: 305
+    type: pro
+    name: 305-authentication-with-warden
+    published_at: "Aug 13, 2010"
