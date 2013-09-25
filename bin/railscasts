@@ -4,5 +4,11 @@ begin
   require 'railscasts'
 end
 
-RailsCasts::Subscriber.new.update
-RailsCasts::Downloader.new.download
+opt = ARGV.first
+case opt
+when 'update', 'update_all'
+  RailsCasts::Subscriber.new.update
+  RailsCasts::Downloader.new.download
+when 'download'
+  RailsCasts::Downloader.new.download
+end
