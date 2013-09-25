@@ -1,4 +1,4 @@
-## This is RailsCasts Subscriber with a little hicking
+## This is RailsCasts Subscriber with a little hack
 
 ### Usage
 
@@ -27,3 +27,7 @@ railscasts update # Update the newest episodes
 railscasts update_all # Update the newest episodes
 railscasts download # Doneload all the episodes
 ```
+
+### TODO
++ add command: railscasts list
++ add command: railscasts --help/-h/help
