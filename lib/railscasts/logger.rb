@@ -12,5 +12,12 @@ module RailsCasts
       end
       puts ''
     end
+
+    def self.notice(message = '')
+      if message.present?
+        puts message
+      end
+      puts ''
+    end
   end
 end

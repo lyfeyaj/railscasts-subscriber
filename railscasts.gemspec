@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Felix Liu']
   s.email       = ['lyfeyaj@gmail.jp']
-  s.homepage    = 'https://github.com/lyfeyaj/railscasts'
+  s.homepage    = 'https://github.com/lyfeyaj/railscasts-subscriber'
   s.summary     = 'A subscriber by hacking for railscasts via authorization token.'
   s.description = 'A subscriber by hacking for railscasts via authorization token.'
 

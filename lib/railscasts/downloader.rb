@@ -21,7 +21,7 @@ module RailsCasts
     
     def check_and_load_episodes_yaml_file
       if File.exist? './../../tmp/episodes.yml'
-        @episodes = YAML.load(File.open('./../../tmp/episodes.yml'))
+        @episodes = YAML.load(File.open(File.expand_path './../../tmp/episodes.yml'))
         Logger.info 'Episodes.yml loaded'
       else
         `touch './../../tmp/episodes.yml'`
@@ -67,6 +67,17 @@ module RailsCasts
     
     def download_to_file(file)
       download_path + '/' + file['name'] + '.' + file_type
+    end
+
+    def list
+      episodes.each do |episode|
+        if !File.exist? download_to_file(item)
+          Logger.notice episode['name'] + " ... downloaded"
+        else
+          Logger.notice episode['name'] + " ... not downloaded"
+        end
+      end
+      Logger.info ''
     end
     
   end

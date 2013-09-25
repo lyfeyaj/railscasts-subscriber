@@ -6,12 +6,29 @@ end
 
 begin
   opt = ARGV.first
+  HELP = <<-HELP
+  railscasts update                # Update the newest episodes
+  railscasts update_all            # Update the newest episodes
+  railscasts download              # Doneload all the episodes
+  railscasts list                  # List all the available episodes
+  railscasts -h/--help/help        # Output the help doc
+  railscasts -v/--version/version  # Output the help doc
+  HELP
   case opt
   when 'update', 'update_all'
     RailsCasts::Subscriber.new.update
     RailsCasts::Downloader.new.download
   when 'download'
     RailsCasts::Downloader.new.download
+  when 'list'
+    RailsCasts::Downloader.new.list
+  when '-h', '--help', 'help'
+    puts HELP
+  when '-v', '--version', 'version'
+    puts RailsCasts::VERSION
+  else
+    puts "No such command provided: #{opt}"
+    puts HELP
   end
 rescue
   RailsCasts::Logger.info 'There are something wrong.'
