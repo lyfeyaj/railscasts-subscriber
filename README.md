@@ -23,11 +23,13 @@ cp config/railscasts.yml.example ~/.railscasts.yml
 + Finally enjoy it.
 
 ``` bash
-railscasts update # Update the newest episodes
-railscasts update_all # Update the newest episodes
-railscasts download # Doneload all the episodes
+railscasts update                # Update the newest episodes
+railscasts update_all            # Update the newest episodes
+railscasts download              # Doneload all the episodes
+railscasts list                  # List all the available episodes
+railscasts -h/--help/help        # Output the help doc
+railscasts -v/--version/version  # Output the help doc
 ```
 
 ### TODO
-+ add command: railscasts list
-+ add command: railscasts --help/-h/help
++ Publish as a gem in rubygem.org

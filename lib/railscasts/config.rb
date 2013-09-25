@@ -14,7 +14,6 @@ module RailsCasts
       config = YAML.load(File.open(path))
       if config["subscription-code"].present?
         @subscription_code = config["subscription-code"]
-        Logger.info 'OK'
       else
         Logger.info 'Subscription code is not existed'
         raise "Missing Subscription Code Error"

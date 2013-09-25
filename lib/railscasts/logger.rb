@@ -13,11 +13,9 @@ module RailsCasts
       puts ''
     end
 
-    def self.notice(message = '')
-      if message.present?
-        puts message
-      end
-      puts ''
+    def self.notice(pre_message = '', after_message = '')
+      length = 70 - pre_message.length - after_message.length
+      puts pre_message + ' ' + '.'*length + ' ' + after_message
     end
   end
 end

@@ -71,13 +71,13 @@ module RailsCasts
 
     def list
       episodes.each do |episode|
-        if !File.exist? download_to_file(item)
-          Logger.notice episode['name'] + " ... downloaded"
+        if File.exist? download_to_file(episode)
+          Logger.notice episode['name'], "downloaded"
         else
-          Logger.notice episode['name'] + " ... not downloaded"
+          Logger.notice episode['name'], "not downloaded"
         end
       end
-      Logger.info ''
+      Logger.info
     end
     
   end
