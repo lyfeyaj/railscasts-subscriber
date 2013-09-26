@@ -16,7 +16,8 @@ module RailsCasts
     
     def download
       create_download_path_if_not_exist
-      episodes.map{ |episode| download_file episode if !episode_exist? episode }
+      episodes.map{ |episode| download_file episode if !episode_exist?(episode) && ok_to_download(episode) }
+      Logger.info 'All episodes have been downloaded!'
     end
     
     def check_and_load_episodes_yaml_file
@@ -50,7 +51,6 @@ module RailsCasts
           end
         end
       end
-      Logger.info "Your Download Path is: #{download_path}"
     end
     
     def download_from_uri(file)
@@ -84,5 +84,8 @@ module RailsCasts
       Logger.info "#{download_counter[:yes]} episodes downloaded & #{download_counter[:no]} episodes not downloaded"
     end
     
+    def ok_to_download(episode)
+       episode['type'] == 'Normal' || subscription_code != 'free_user'
+    end
   end
 end

@@ -1,12 +1,15 @@
-## This is RailsCasts Subscriber with a little hack
+# RailsCasts Subscriber with a little hack
 
 ## Pre-requirements
 
-+ You need to have a subscription code such as: 
++ To use this tool, you must have ruby environment installed.
 
-XJHhjlfjkdLIfd3ffdsfds
+## Notes
 
-### Usage
++ For railscasts free user, You can update and download all free railscasts episodes with this tools;
++ For railscasts pro user, You need to have a subscription code (license) such as: XJHhjlfjkdLIfd3FfdRfSD.
+
+## Usage
 
 + Download it and install.
 
@@ -36,6 +39,6 @@ file-type: mp4                            # choose file type that your want to d
 download-path: ~/felix/railscasts         # download path is where your want to put railscasts in
 ```
 
-### TODO
+## TODO
 + Publish as a gem in rubygem.org
 + Add valid check for file
