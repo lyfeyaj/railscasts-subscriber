@@ -14,7 +14,7 @@ module RailsCasts
       config = YAML.load(File.open(path))
       if config["subscription-code"].present? && config["subscription-code"].length >= 22
         @subscription_code = config["subscription-code"]
-        Logger.info 'Subscription code available is OK.'
+        Logger.info 'Subscription code is available.'
       else
         @subscription_code = 'free_user'
         Logger.info 'Subscription code is not available, only free episodes will be downloaded'
