@@ -15,33 +15,28 @@ module RailsCasts
     end
     
     def download
-      check_existed_episodes
-      
+      create_download_path_if_not_exist
+      episodes.map{ |episode| download_file episode if !episode_exist? episode }
     end
     
     def check_and_load_episodes_yaml_file
-      if File.exist? './../../tmp/episodes.yml'
-        @episodes = YAML.load(File.open(File.expand_path './../../tmp/episodes.yml'))
+      if File.exist? '/tmp/episodes.yml'
+        @episodes = YAML.load(File.open('/tmp/episodes.yml'))
         Logger.info 'Episodes.yml loaded'
       else
-        `touch './../../tmp/episodes.yml'`
+        `touch '/tmp/episodes.yml'`
         Logger.info 'Not Found episodes.yml file, creating a new one'
       end
     end
     
-    def check_existed_episodes
-      create_download_path_if_not_exist
-      episodes.map do |item|
-        if !File.exist? download_to_file(item)
-          download_file item
-        end
-      end
+    def episode_exist?(episode)
+      File.exist? download_to_file(episode)
     end
     
     def download_file(file)
-      Logger.info "Downloading #{file['name']}"
+      Logger.info "Start Downloading #{filename(file)}"
       `wget #{download_from_uri(file)} -O #{download_to_file(file)}`
-      Logger.info "Downloaded #{file['name']}"
+      Logger.info "#{filename(file)} Downloaded"
     end
     
     def create_download_path_if_not_exist
@@ -55,6 +50,7 @@ module RailsCasts
           end
         end
       end
+      Logger.info "Your Download Path is: #{download_path}"
     end
     
     def download_from_uri(file)
@@ -66,18 +62,26 @@ module RailsCasts
     end
     
     def download_to_file(file)
-      download_path + '/' + file['name'] + '.' + file_type
+      download_path + '/' + filename(file)
+    end
+    
+    def filename(file)
+      file['name'] + '.' + file_type
     end
 
     def list
+      download_counter = {yes: 0, no: 0}
       episodes.each do |episode|
-        if File.exist? download_to_file(episode)
-          Logger.notice episode['name'], "downloaded"
+        if episode_exist? episode
+          download_counter[:yes] += 1
+          Logger.notice filename(episode), "downloaded"
         else
-          Logger.notice episode['name'], "not downloaded"
+          download_counter[:no] += 1
+          Logger.notice filename(episode), "not downloaded"
         end
       end
       Logger.info
+      Logger.info "#{download_counter[:yes]} episodes downloaded & #{download_counter[:no]} episodes not downloaded"
     end
     
   end

@@ -3,13 +3,16 @@ module RailsCasts
     RAILSCASTS_URI = 'http://railscasts.com/'
     
     def scrap
+      Logger.info "Try to fetch total page number"
       pages = get_pages
-      pages.map do |page|
-        Logger.info "Fetch Page #{page} Start"
+      Logger.info "Total Page Number: #{pages.max}"
+      episodes = pages.map do |page|
         arr = fetch_episodes_for_current page
-        Logger.info "Fetch Page #{page} Complete"
+        Logger.notice "Fetch page #{page}'s episodes info", 'done!'
         arr
       end.flatten
+      Logger.info 'Successfully fetch all episodes info.'
+      episodes
     end
     
     def get_pages

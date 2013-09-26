@@ -11,10 +11,10 @@ module RailsCasts
     
     def check_for_new_episodes
       episodes = RailsCasts::Spider.new.scrap
-      file = File.open('./../../tmp/episodes.yml', 'w')
+      file = File.open('/tmp/episodes.yml', 'w')
       file.write(episodes.to_yaml)
       file.close
-      Logger.info "RailsCasts Updated"
+      Logger.info "RailsCasts Info Updated"
     end
     
   end
