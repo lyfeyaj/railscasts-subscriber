@@ -38,7 +38,7 @@ railscasts -v/--version/version  # Output the version info
 ## About config file: ~/.railscasts.yml
 
 ```yaml
-subscription-code: XJHhjlfjkdLIfd3FfdRfSD # subscription code, replace yours in here
+subscription-code: your_license           # subscription code, replace yours in here
 file-type: mp4                            # choose file type that your want to download(mp4, m4v, webm, ogv)
 download-path: ~/felix/railscasts         # download path is where your want to put railscasts in
 ```
