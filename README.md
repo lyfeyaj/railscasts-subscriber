@@ -15,7 +15,7 @@
 
 ## Usage
 
-+ Download it and install.
+#### Download it and install.
 
 ```bash
 git clone https://github.com/lyfeyaj/railscasts-subscriber.git
@@ -23,7 +23,7 @@ cd railscasts-subscriber
 rake install
 ```
 
-+ Enjoy it.
+#### Enjoy it by below commands.
 
 ``` bash
 railscasts update                # Update the newest episodes
