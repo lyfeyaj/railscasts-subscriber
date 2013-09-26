@@ -6,8 +6,12 @@
 
 ## Notes
 
-+ For railscasts free user, You can update and download all free railscasts episodes with this tools;
-+ For railscasts pro user, You need to have a subscription code (license) such as: XJHhjlfjkdLIfd3FfdRfSD.
+#### For railscasts free user
++ You can update and download all free railscasts episodes with this tools
+
+#### For railscasts pro user
++ You need to have a subscription code (license) such as: XJHhjlfjkdLIfd3FfdRfSD.
++ Trust me, XJHhjlfjkdLIfd3FfdRfSD is a fake one ^_^
 
 ## Usage
 
@@ -34,7 +38,7 @@ railscasts -v/--version/version  # Output the version info
 ## About config file: ~/.railscasts.yml
 
 ```yaml
-subscription-code: XJHhjlfjkdLIfd3ffdsfds # subscription code, replace yours in here
+subscription-code: XJHhjlfjkdLIfd3FfdRfSD # subscription code, replace yours in here
 file-type: mp4                            # choose file type that your want to download(mp4, m4v, webm, ogv)
 download-path: ~/felix/railscasts         # download path is where your want to put railscasts in
 ```
