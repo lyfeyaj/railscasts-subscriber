@@ -30,7 +30,7 @@ module RailsCasts
     
     def uri
       path = 'http://media.railscasts.com/assets/'
-      if type == 'Pro'
+      path = if type == 'Pro'
         path + 'subscriptions/' + RailsCasts.config.subscription_code
       else
         path + 'episodes'

@@ -12,6 +12,7 @@ begin
   railscasts download              # Download all the episodes
   railscasts list                  # List all the available episodes
   railscasts info                  # Information about railscasts
+  railscasts links                 # List all the railscasts download links
   railscasts -h/--help/help        # Output the help doc
   railscasts -v/--version/version  # Output the version info
   HELP
@@ -44,6 +45,8 @@ If you have any comments, suggestions, questions, etc. I'd love to hear them!
 Please use the Feedback Page or send an email to feedback@railscasts.com.
 
     INFO
+  when 'links'
+    RailsCasts::Downloader.new.links
   when '-h', '--help', 'help'
     puts HELP
   when '-v', '--version', 'version'

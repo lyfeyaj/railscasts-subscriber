@@ -58,5 +58,19 @@ module RailsCasts
       Logger.info
       Logger.info "#{download_counter[:yes]} episodes downloaded & #{download_counter[:no]} episodes not downloaded"
     end
+    
+    def links
+      Logger.info "List all the railscasts download links"
+      Logger.print
+      counter = 0
+      episodes.each do |episode|
+        if episode.available?
+          Logger.print episode.uri
+          counter += 1
+        end
+      end
+      Logger.print
+      Logger.info "#{counter} railscasts have been listed!"
+    end
   end
 end

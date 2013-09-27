@@ -24,5 +24,11 @@ module RailsCasts
         puts pre_message + ' ' + '.'*length + ' ' + after_message
       end
     end
+    
+    def self.print(message = '', quiet = false)
+      if !quiet
+        puts message
+      end
+    end
   end
 end
