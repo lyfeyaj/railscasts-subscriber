@@ -17,7 +17,7 @@ task :install do
     RailsCasts::Logger.info 'Already Exist!'
   end
   RailsCasts::Logger.print
-  
+
   RailsCasts::Logger.info 'Preparing .railscasts.yml. Location: ~/.railscasts.yml'
   if !File.exist? (File.expand_path '~/.railscasts.yml')
     if system 'cp config/railscasts.yml.example ~/.railscasts.yml'
@@ -30,10 +30,10 @@ task :install do
     RailsCasts::Logger.info 'Already Exist!'
   end
   RailsCasts::Logger.print
-  
+
   RailsCasts::Logger.info 'Building gem'
   system 'gem build railscasts.gemspec'
-  
+
   RailsCasts::Logger.print
   RailsCasts::Logger.info 'Installing gem'
   system "gem install railscasts-#{RailsCasts::VERSION}.gem --no-ri --no-rdoc"

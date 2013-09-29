@@ -1,7 +1,7 @@
 module RailsCasts
   class Spider
     RAILSCASTS_URI = 'http://railscasts.com/'
-    
+
     def scrap
       Logger.info "Try to fetch total page number"
       pages = get_pages
@@ -14,7 +14,7 @@ module RailsCasts
       Logger.info 'Successfully fetch all episodes info.'
       episodes
     end
-    
+
     def get_pages
       doc = html_parser(RAILSCASTS_URI)
       pagination = doc.css(".pagination")
@@ -28,7 +28,7 @@ module RailsCasts
         []
       end
     end
-    
+
     def fetch_episodes_for_current(page)
       uri = RAILSCASTS_URI + '?page=' + page.to_s
       doc = html_parser(uri)
@@ -45,11 +45,11 @@ module RailsCasts
         }
       end
     end
-    
+
     def html_parser(uri)
       Nokogiri::HTML(open(uri))
     end
-    
+
     def parse_name(name)
       parts = name.split('-')
       snumber = parts.shift

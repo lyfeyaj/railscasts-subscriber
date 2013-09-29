@@ -3,12 +3,12 @@ module RailsCasts
   def self.config
     @config ||= Configuration.new
   end
-  
+
   class Configuration
       attr_reader :subscription_code
       attr_reader :file_type
       attr_reader :download_path
-    
+
     def initialize
       path = File.expand_path find_config_file
       config = YAML.load(File.open(path))
@@ -29,7 +29,7 @@ module RailsCasts
         Logger.info "No download path found, using the default path: #{@download_path}"
       end
     end
-    
+
     def find_config_file
       Logger.info 'Loading config file'
       if File.exist? File.expand_path('~/.railscasts.yml')

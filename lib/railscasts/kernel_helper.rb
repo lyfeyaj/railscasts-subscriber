@@ -1,5 +1,5 @@
 module Kernel
   def present?
-    !!self && !self.empty?
+    !(respond_to?(:empty?) ? empty? : !self)
   end
 end

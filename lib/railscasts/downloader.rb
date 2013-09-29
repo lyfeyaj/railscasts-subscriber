@@ -1,19 +1,19 @@
 module RailsCasts
   class Downloader
     attr_reader :episodes
-    
+
     BASE_DOWNLOAD_URI = 'http://media.railscasts.com/assets/'
-    
+
     def initialize
       check_and_load_episodes_yaml_file
     end
-    
+
     def download
       create_download_path_if_not_exist
       episodes.map{ |episode| download_file episode if !episode.exist? && episode.available? }
       Logger.info 'All episodes have been downloaded!'
     end
-    
+
     def check_and_load_episodes_yaml_file
       if File.exist? '/tmp/episodes.yml'
         @episodes = YAML.load(File.open('/tmp/episodes.yml')).map{|episode| Episode.new episode}
@@ -23,13 +23,13 @@ module RailsCasts
         Logger.info 'Not Found episodes.yml file, creating a new one'
       end
     end
-    
+
     def download_file(episode)
       Logger.info "Start Downloading #{episode.fullname}"
       `wget #{episode.uri} -O #{episode.output_path}`
       Logger.info "#{episode.fullname} Downloaded"
     end
-    
+
     def create_download_path_if_not_exist
       download_path = RailsCasts.config.download_path
       if !Dir.exist? download_path
@@ -43,7 +43,7 @@ module RailsCasts
         end
       end
     end
-    
+
     def list
       download_counter = {yes: 0, no: 0}
       episodes.each do |episode|
@@ -58,7 +58,7 @@ module RailsCasts
       Logger.info
       Logger.info "#{download_counter[:yes]} episodes downloaded & #{download_counter[:no]} episodes not downloaded"
     end
-    
+
     def links
       Logger.info "List all the railscasts download links"
       Logger.print
