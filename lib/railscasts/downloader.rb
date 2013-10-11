@@ -28,6 +28,7 @@ module RailsCasts
       Logger.info "Start Downloading #{episode.fullname}"
       Logger.print "Saving to: '#{episode.output_path}'"
       `curl -# -o #{episode.output_path} #{episode.uri}`
+      Logger.print ""
       Logger.info "#{episode.fullname} Downloaded"
     end
 
