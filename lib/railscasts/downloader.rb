@@ -26,7 +26,8 @@ module RailsCasts
 
     def download_file(episode)
       Logger.info "Start Downloading #{episode.fullname}"
-      `wget #{episode.uri} -O #{episode.output_path}`
+      Logger.print "Saving to: '#{episode.output_path}'"
+      `curl -# -o #{episode.output_path} #{episode.uri}`
       Logger.info "#{episode.fullname} Downloaded"
     end
 
@@ -45,7 +46,7 @@ module RailsCasts
     end
 
     def list
-      download_counter = {yes: 0, no: 0}
+      download_counter = { yes: 0, no: 0 }
       episodes.each do |episode|
         if episode.exist?
           download_counter[:yes] += 1

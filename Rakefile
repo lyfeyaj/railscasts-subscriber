@@ -19,7 +19,7 @@ task :install do
   RailsCasts::Logger.print
 
   RailsCasts::Logger.info 'Preparing .railscasts.yml. Location: ~/.railscasts.yml'
-  if !File.exist? (File.expand_path '~/.railscasts.yml')
+  if !File.exist? File.expand_path('~/.railscasts.yml')
     if system 'cp config/railscasts.yml.example ~/.railscasts.yml'
       info = 'done!'
     else
