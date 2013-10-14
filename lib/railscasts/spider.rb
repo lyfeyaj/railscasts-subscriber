@@ -16,10 +16,13 @@ module RailsCasts
     def multi_threads_scrap
       pages = page_info
       episodes = []
+      mutex = Mutex.new
       pages.map do |page|
         Thread.new {
           arr = fetch_episodes_for_current page
-          Logger.notice "Fetch page #{page}'s episodes info", 'done!'
+          mutex.synchronize do
+            Logger.notice "Fetch page #{page}'s episodes info", 'done!'
+          end
           episodes << arr
         }
       end.each {|t| t.join}
