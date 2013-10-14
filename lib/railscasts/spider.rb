@@ -3,9 +3,7 @@ module RailsCasts
     RAILSCASTS_URI = 'http://railscasts.com/'
 
     def scrap
-      Logger.info "Try to fetch total page number"
-      pages = get_pages
-      Logger.info "Total Page Number: #{pages.max}"
+      pages = page_info
       episodes = pages.map do |page|
         arr = fetch_episodes_for_current page
         Logger.notice "Fetch page #{page}'s episodes info", 'done!'
@@ -13,6 +11,27 @@ module RailsCasts
       end.flatten
       Logger.info 'Successfully fetch all episodes info.'
       episodes
+    end
+
+    def multi_threads_scrap
+      pages = page_info
+      episodes = []
+      pages.map do |page|
+        Thread.new {
+          arr = fetch_episodes_for_current page
+          Logger.notice "Fetch page #{page}'s episodes info", 'done!'
+          episodes << arr
+        }
+      end.each {|t| t.join}
+      Logger.info 'Successfully fetch all episodes info.'
+      episodes.flatten.sort_by{|episode| episode['id']}
+    end
+
+    def page_info
+      Logger.info "Try to fetch total page number"
+      pages = get_pages
+      Logger.info "Total Page Number: #{pages.max}"
+      pages
     end
 
     def get_pages
