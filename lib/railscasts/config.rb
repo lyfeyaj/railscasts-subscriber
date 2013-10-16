@@ -23,10 +23,10 @@ module RailsCasts
       @file_type = config["file-type"].present? ? config["file-type"] : 'mp4'
       if config["download-path"].present?
         @download_path = File.expand_path config["download-path"]
-        Logger.info "Using download path: #{@download_path}"
+        Logger.info "Using directory: #{@download_path}"
       else
         @download_path = File.expand_path '~/railscasts'
-        Logger.info "No download path found, using the default path: #{@download_path}"
+        Logger.info "No download directory found, using the default path: #{@download_path}"
       end
     end
 

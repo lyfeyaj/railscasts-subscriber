@@ -32,6 +32,7 @@ railscasts download              # Download all the episodes
 railscasts list                  # List all the available episodes
 railscasts info                  # Information about railscasts
 railscasts links                 # List all the railscasts download links
+railscasts open                  # Open the RailsCasts directory with default browser
 railscasts -h/--help/help        # Output the help doc
 railscasts -v/--version/version  # Output the version info
 ```
