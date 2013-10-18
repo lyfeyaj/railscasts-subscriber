@@ -17,7 +17,7 @@ module RailsCasts
     def check_and_load_episodes_yaml_file
       if File.exist? '/tmp/episodes.yml'
         @episodes = YAML.load(File.open('/tmp/episodes.yml')).map{|episode| Episode.new episode}
-        Logger.info 'Episodes.yml loaded'
+        # Logger.info 'Episodes.yml loaded'
       else
         `touch '/tmp/episodes.yml'`
         Logger.info 'Not Found episodes.yml file, creating a new one'
@@ -63,7 +63,6 @@ module RailsCasts
 
     def links
       Logger.info "List all the railscasts download links"
-      Logger.print
       counter = 0
       episodes.each do |episode|
         if episode.available?

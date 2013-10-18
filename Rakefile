@@ -5,7 +5,7 @@ require_relative 'lib/railscasts/version'
 
 desc 'Install this gem into your system'
 task :install do
-  RailsCasts::Logger.info 'Preparing episodes.yml. Location: /tmp/episodes.yml'
+  RailsCasts::Logger.info 'Preparing episodes.yml ... Location: /tmp/episodes.yml'
   if !File.exist? '/tmp/episodes.yml'
     if system 'cp tmp/episodes.yml /tmp/episodes.yml'
       info = 'done!'

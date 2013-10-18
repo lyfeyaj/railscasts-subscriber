@@ -14,7 +14,7 @@ module RailsCasts
       config = YAML.load(File.open(path))
       if config["subscription-code"].present? && config["subscription-code"].length >= 22
         @subscription_code = config["subscription-code"]
-        Logger.info 'Subscription code is available.'
+        # Logger.info 'Subscription code is available.'
       else
         @subscription_code = 'free_user'
         Logger.info 'Subscription code is not available, only free episodes will be downloaded'
@@ -23,6 +23,7 @@ module RailsCasts
       @file_type = config["file-type"].present? ? config["file-type"] : 'mp4'
       if config["download-path"].present?
         @download_path = File.expand_path config["download-path"]
+        Logger.print
         Logger.info "Using directory: #{@download_path}"
       else
         @download_path = File.expand_path '~/railscasts'
@@ -31,7 +32,7 @@ module RailsCasts
     end
 
     def find_config_file
-      Logger.info 'Loading config file'
+      # Logger.info 'Loading config file'
       if File.exist? File.expand_path('~/.railscasts.yml')
         path = '~/.railscasts.yml'
       else
