@@ -14,7 +14,6 @@ module RailsCasts
       config = YAML.load(File.open(path))
       if config["subscription-code"].present? && config["subscription-code"].length >= 22
         @subscription_code = config["subscription-code"]
-        # Logger.info 'Subscription code is available.'
       else
         @subscription_code = 'free_user'
         Logger.info 'Subscription code is not available, only free episodes will be downloaded'
@@ -32,9 +31,8 @@ module RailsCasts
     end
 
     def find_config_file
-      # Logger.info 'Loading config file'
       if File.exist? File.expand_path('~/.railscasts.yml')
-        path = '~/.railscasts.yml'
+        '~/.railscasts.yml'
       else
         Logger.info 'No config file found on location: ~/.railscasts.yml'
         raise 'No File Found Error'
