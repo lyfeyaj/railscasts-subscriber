@@ -5,23 +5,23 @@ module RailsCasts
   end
 
   class Configuration
-      attr_reader :subscription_code
-      attr_reader :file_type
-      attr_reader :download_path
+    attr_reader :subscription_code
+    attr_reader :file_type
+    attr_reader :download_path
 
     def initialize
       path = File.expand_path find_config_file
       config = YAML.load(File.open(path))
-      if config["subscription-code"].present? && config["subscription-code"].length >= 22
-        @subscription_code = config["subscription-code"]
+      if config['subscription-code'].present? && config['subscription-code'].length >= 22
+        @subscription_code = config['subscription-code']
       else
         @subscription_code = 'free_user'
         Logger.info 'Subscription code is not available, only free episodes will be downloaded'
         Logger.info 'If you want to view the pro episodes, please buy a license'
       end
-      @file_type = config["file-type"].present? ? config["file-type"] : 'mp4'
-      if config["download-path"].present?
-        @download_path = File.expand_path config["download-path"]
+      @file_type = config['file-type'].present? ? config['file-type'] : 'mp4'
+      if config['download-path'].present?
+        @download_path = File.expand_path config['download-path']
         Logger.print
         Logger.info "Using directory: #{@download_path}"
       else

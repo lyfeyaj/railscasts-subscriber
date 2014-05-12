@@ -10,7 +10,7 @@ module RailsCasts
 
     def download
       create_download_path_if_not_exist
-      episodes.map{ |episode| download_file episode if !episode.exist? && episode.available? }
+      episodes.map { |episode| download_file episode if !episode.exist? && episode.available? }
       Logger.info 'All episodes have been downloaded!'
     end
 
@@ -27,7 +27,7 @@ module RailsCasts
       Logger.info "Start Downloading #{episode.fullname}"
       Logger.print "Saving to: '#{episode.output_path}'"
       `curl -# -o #{episode.output_path} #{episode.uri}`
-      Logger.print ""
+      Logger.print ''
       Logger.info "#{episode.fullname} Downloaded"
     end
 

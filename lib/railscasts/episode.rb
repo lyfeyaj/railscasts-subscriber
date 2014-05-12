@@ -13,7 +13,7 @@ module RailsCasts
     end
 
     def available?
-       type == 'Normal' || RailsCasts.config.subscription_code != 'free_user'
+      type == 'Normal' || RailsCasts.config.subscription_code != 'free_user'
     end
 
     def exist?

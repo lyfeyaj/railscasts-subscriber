@@ -56,14 +56,14 @@ module RailsCasts
       doc = html_parser(uri)
       doc.css('.episodes .episode').map do |episode|
         id = episode.attr('id').scan(/[0-9]+/).first.to_i
-        type = episode.css('.main .watch a').attr('href').text == '/pro' ? "Pro" : "Normal"
+        type = episode.css('.main .watch a').attr('href').text == '/pro' ? 'Pro' : 'Normal'
         name = episode.css('.main h2 a').attr('href').text.split('/').last
         published_at = episode.css('.main .info .published_at').text
         {
           'id' => id,
-          'type'=> type,
-          'name'=> parse_name(name),
-          'published_at'=> published_at
+          'type' => type,
+          'name' => parse_name(name),
+          'published_at' => published_at
         }
       end
     end
@@ -75,9 +75,7 @@ module RailsCasts
     def parse_name(name)
       parts = name.split('-')
       snumber = parts.shift
-      if snumber.length < 3
-        snumber = '0'*(3 - snumber.length) + snumber
-      end
+      snumber = '0' * (3 - snumber.length) + snumber if snumber.length < 3
       parts.unshift snumber
       parts.join('-')
     end
