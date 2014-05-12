@@ -1,2 +1,3 @@
 config/railscasts.yml
 railscasts-*
+*.gem

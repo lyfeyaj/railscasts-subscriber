@@ -3,11 +3,11 @@ $:.push File.expand_path("../lib", __FILE__)
 require "railscasts/version"
 
 Gem::Specification.new do |s|
-  s.name        = 'railscasts'
+  s.name        = 'rcs'
   s.version     = RailsCasts::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Felix Liu']
-  s.email       = ['lyfeyaj@gmail.jp']
+  s.email       = ['lyfeyaj@gmail.com']
   s.homepage    = 'https://github.com/lyfeyaj/railscasts-subscriber'
   s.summary     = 'A railscasts subscriber. Just for fun!'
   s.description = 'A subscriber by hacking for railscasts via authorization token.'
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.extra_rdoc_files = ['README.md']
   s.require_paths = ['lib']
-  s.executables   = ["railscasts"]
+  s.executables   = ["rcs"]
 
   s.licenses = ['MIT']
 

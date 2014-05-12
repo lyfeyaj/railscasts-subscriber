@@ -26,15 +26,15 @@ rake install
 #### Enjoy it by below commands.
 
 ``` bash
-railscasts update                # Update the newest episodes
-railscasts upgrade               # Update the newest episodes and download
-railscasts download              # Download all the episodes
-railscasts list                  # List all the available episodes
-railscasts info                  # Information about railscasts
-railscasts links                 # List all the railscasts download links
-railscasts open                  # Open the RailsCasts directory with default browser
-railscasts -h/--help/help        # Output the help doc
-railscasts -v/--version/version  # Output the version info
+rcs update                # Update the newest episodes
+rcs upgrade               # Update the newest episodes and download
+rcs download              # Download all the episodes
+rcs list                  # List all the available episodes
+rcs info                  # Information about railscasts
+rcs links                 # List all the railscasts download links
+rcs open                  # Open the RailsCasts directory with default browser
+rcs -h/--help/help        # Output the help doc
+rcs -v/--version/version  # Output the version info
 ```
 
 ## About config file: ~/.railscasts.yml

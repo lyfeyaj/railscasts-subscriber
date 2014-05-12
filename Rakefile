@@ -36,7 +36,7 @@ task :install do
 
   RailsCasts::Logger.print
   RailsCasts::Logger.info 'Installing gem'
-  system "gem install railscasts-#{RailsCasts::VERSION}.gem --no-ri --no-rdoc"
+  system "gem install rcs-#{RailsCasts::VERSION}.gem --no-ri --no-rdoc"
   RailsCasts::Logger.info
   RailsCasts::Logger.print 'Please set up your subscription code to enjoy ~~~ ^_^'
   RailsCasts::Logger.print
